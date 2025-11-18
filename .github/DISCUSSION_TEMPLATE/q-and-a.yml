@@ -1,0 +1,82 @@
+---
+title: "[Q&A]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## GitHub Foundations Q&A
+        
+        This template is designed to help you ask questions and learn about GitHub foundations.
+        
+  - type: dropdown
+    id: topic
+    attributes:
+      label: GitHub Foundation Topic
+      description: What GitHub foundation topic is your question about?
+      options:
+        - Git Basics
+        - GitHub Repositories
+        - Branching and Merging
+        - Pull Requests
+        - Issues and Project Management
+        - GitHub Actions and CI/CD
+        - GitHub Pages
+        - Collaboration and Teams
+        - Security Features
+        - GitHub CLI
+        - Other
+      default: 0
+    validations:
+      required: true
+      
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know about GitHub foundations?
+      placeholder: Ask your question here...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any additional context that might help others answer your question
+      placeholder: I'm trying to... I've already tried... I'm learning about...
+    validations:
+      required: false
+      
+  - type: textarea
+    id: code-samples
+    attributes:
+      label: Code Samples (if applicable)
+      description: Include any code, commands, or configuration files that are relevant
+      render: shell
+      
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Your GitHub Experience Level
+      description: This helps us provide the right level of detail in answers
+      options:
+        - Beginner (new to GitHub)
+        - Intermediate (comfortable with basics)
+        - Advanced (experienced user)
+      default: 0
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: research
+    attributes:
+      label: Pre-submission Checklist
+      description: Before submitting, please confirm you have...
+      options:
+        - label: Searched existing discussions/issues for similar questions
+          required: true
+        - label: Checked the GitHub documentation at docs.github.com
+          required: false
+        - label: Tried to solve the problem myself first
+          required: false
