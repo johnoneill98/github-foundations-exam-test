@@ -95,3 +95,4 @@ Feel free to use these templates and modify them to suit your needs. They serve 
 ## 📝 License
 
 This is a learning repository. Feel free to use these templates for your own projects!
+John is Awesome
